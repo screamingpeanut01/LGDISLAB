@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Branding Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #000000; /* Pure Black Background */
+            color: #E5E7EB; 
+        }
+        .hero-gradient-text {
+            background: linear-gradient(90deg, #3B82F6, #93C5FD); /* Blue Gradient */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .section-title {
+            border-bottom: 2px solid #1E40AF; /* Dark Blue Border */
+            padding-bottom: 0.5rem;
+            margin-bottom: 2rem;
+        }
+        .career-item::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: #3B82F6; /* Blue Arrow */
+            font-weight: bold;
+        }
+        .about-heading {
+            font-size: 1.25rem; /* text-xl */
+            font-weight: 700; /* font-bold */
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            color: #FFFFFF;
+        }
+        .link-card-arrow {
+            transition: transform 0.2s ease-in-out;
+        }
+        .link-card:hover .link-card-arrow {
+            transform: translateX(5px);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Container for the entire page -->
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- Header/Navigation -->
+        <header class="py-6">
+            <nav class="flex justify-between items-center">
+                <div class="text-2xl font-bold tracking-tighter">김권택</div>
+                <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-400">
+                    <a href="#about" class="hover:text-blue-400 transition-colors">About</a>
+                    <a href="#strengths" class="hover:text-blue-400 transition-colors">Strengths</a>
+                    <a href="#career" class="hover:text-blue-400 transition-colors">Career</a>
+                    <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-lg transition-colors">Contact</a>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <!-- 1. Hero Landing Page Section -->
+            <section id="hero" class="text-center py-20 md:py-32">
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-black tracking-tighter mb-4 hero-gradient-text">
+                    LG 디스커버리랩 자기소개서
+                </h1>
+                <p class="max-w-2xl mx-auto text-lg md:text-xl text-gray-400 mb-8">
+                    지원자 김권택의 지원 동기와 역량을 정리했습니다.
+                </p>
+                <a href="#video" class="inline-block bg-blue-500 text-white font-bold py-3 px-8 rounded-lg text-lg hover:bg-blue-600 transition-transform transform hover:scale-105">
+                    See My Story
+                </a>
+            </section>
+
+            <!-- 2. Self-Introducing Video Section -->
+            <section id="video" class="py-16 md:py-24">
+                <div class="bg-black rounded-xl shadow-2xl overflow-hidden aspect-video mx-auto max-w-4xl border border-blue-900">
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/_edWWsIRboU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <p class="text-center text-gray-400 mt-4 text-lg max-w-4xl mx-auto">
+                    저의 AI관련 역량과 비전을 NotebookLM을 통해서 간단한 영상으로 요약한 뒤 AI툴로 편집하였습니다
+                </p>
+            </section>
+
+            <!-- 3. AI Vision Section -->
+            <section id="about" class="py-16 md:py-24">
+                <h2 class="text-3xl font-bold tracking-tight section-title">AI를 대하는 자세와 비전</h2>
+                <div class="prose prose-invert lg:prose-xl max-w-none text-gray-300 space-y-6">
+
+                    <h3 class="about-heading">새로운 시대의 변곡점, AI</h3>
+                    <p>
+                        제가 살고 있는 이 시기는 역사적으로 매우 중요한 변곡점에 있습니다. <b>AI의 등장</b>은 저를 비롯한 많은 사람들에게 편리함을 주는 동시에 큰 과제를 안겨주었습니다. 빠르게 변화하는 시대에 적응하여, <b>AI라는 새로운 도구를 활용</b>할 수 있느냐가 첫번째 과제이고, AI가 인간을 뛰어넘는 시기에 도달하였을때, <b>인간 본연으로써 대체되지 않을 수 있느냐</b>가 두번쨰 과제입니다. <b>AGI</b>에 대한 논의가 오고가는 가운데, 이 두 질문에 대한 답은 각기 다릅니다. 미래는 예측할 수 없지만, AI를 알고 사용하는 법을 적극적으로 앎으로써 저는 저만의 방식으로 새로운 시대의 요구에 맞추어가려고 하고 있습니다. LG 디스커버리랩에서 진행하는 청소년 인공지능 교육도, 이러한 <b>AI 리터러시와 활용력 향상</b>을 위한 것일 거라고 믿고 있습니다.
+                    </p>
+
+                    <h3 class="about-heading">AI를 활용한 학습법</h3>
+                    <p>
+                        저는 <b>AI를 레버리지하는 작업과 공부방식</b>, 그리고 <b>AI 콘텐츠 부문</b>에 특히 관심이 많습니다. 단순히 관심뿐 아니라, 스스로 과제나 공부를 할때도 AI를 적극적으로 활용하고 있습니다. 기초적으로 모르는 내용을 물어보고 답하는 활용법이 아니라, <b>Gemini</b>와 같은 챗봇을 사용한 <b>문서 구조화 및 가이드라인 제시</b>, <b>퀴즈문답식 공부 방식</b>으로 활용하기는 물론, <b>NotebookLM</b>을 활용하여 공부자료를 <b>음성화/시각화</b>하는 방식 등 다양한 활용방식을 탐구하고 실천하고 있습니다.
+                    </p>
+
+                    <h3 class="about-heading">AI를 활용한 작업 최적화</h3>
+                    <p>
+                        작업에 있어서는 시간소비적인 활동을 최적화하는데 AI를 적극적으로 활용하고 있습니다. 프리젠테이션 제작 / 아이디어 프로토타이핑과 같은, 전달방식보다 아이디어가 중요한 작업에 있어서는, 아이디어라는 탐구에 집중하기 위해 <b>GenSpark/Manus</b>와 같은 AI 에이전트로 프리젠테이션을 제작하고, <b>FireBase 혹은 LLM</b>으로 HTML을 제작하여 <b>프로토타이핑</b>합니다. 간단한 문서 처리나 집계등은 <b>GeminiCLI</b>와 같은 에이전트로 터미널에서 파일을 처리합니다. 그 외에도 다양한 작업에 AI를 활용하고 있으며, 해커톤과 같은 활동에서, AI도구들을 적극적으로 알려주고, 함께 사용함으로써 팀원들로부터 <b>긍정적인 피드백</b>을 받아본 경험 또한 있습니다.
+                    </p>
+                    
+                    <h3 class="about-heading">콘텐츠와 AI의 융합</h3>
+                     <p>
+                        특히 <b>콘텐츠 도메인</b>에 있어 AI의 사용에 관심이 많습니다. 콘텐츠 도메인은 기술 주도적 특성으로 인해 AI로 인해 창작의 개념에 가장 큰 도전을 받는 분야이지만, 동시에 AI의 활용으로 그 패러다임이 가장 크게 변화하고 또 발전할 가능성이 있는 분야입니다. 콘텐츠 제작에서 AI 활용 경험으로는, 학교 전시 프로젝트에서 AI 기술 스택을 맡아, <b>영화 제작 파이프라인 전반에서의 AI 도입</b>을 주도하여 제작한 바가 있습니다.
+                    </p>
+
+                    <h3 class="about-heading">AI, 저의 핵심 역량입니다</h3>
+                    <p>
+                        저는 이러한 AI 활용능력을 꾸준히 가져가기 위해서, 주기적으로 <b>AI 뉴스와 소식을 간단하게 정리하며 공부</b>하고 있습니다. 각종 뉴스와 SNS의 뉴스레터를 통해서 AI 프로덕트와 도구들을 주기적으로 정리하고 실제로 사용해보며, 사용성이 있다고 판단하면 적극적으로 활용하고 있습니다. 자신있게 저는 저의 <b>AI 활용능력을 저의 강점</b>으로 꼽을 수 있습니다. AI를 저의 작업 및 공부방식에 도입하며 효율성과 효과성을 체감할 수 있었고, 다른 사람들에게 제공했을 때도 매우 긍정적인 피드백을 받을 수 있었습니다. 비록 제가 강의를 직접 하지는 않지만, 강의를 보조해주는 역할 또한 이러한 AI의 활용법과 가능성을 잘 숙지하고 있을 때 <b>효과적인 보조의 시너지</b>를 이룰 수 있다고 생각합니다.
+                    </p>
+                </div>
+            </section>
+
+            <!-- 4. Core Strengths Section -->
+            <section id="strengths" class="py-16 md:py-24">
+                <h2 class="text-3xl font-bold tracking-tight section-title">Core Strengths</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Strength 1 -->
+                    <div class="bg-gray-900 p-6 rounded-lg border border-blue-900">
+                        <h3 class="text-xl font-bold mb-2 text-white">AI 기술 활용 및 적용</h3>
+                        <p class="text-gray-400">학습 및 작업 효율화를 위해 최신 AI 도구와 기술을 적극적으로 탐구하고 적용합니다.</p>
+                    </div>
+                    <!-- Strength 2 -->
+                    <div class="bg-gray-900 p-6 rounded-lg border border-blue-900">
+                        <h3 class="text-xl font-bold mb-2 text-white">교육 및 공감적 소통</h3>
+                        <p class="text-gray-400">다수의 교육 경험을 통해 얻은 노하우로 학생들과 공감하고, 학습 동기를 부여하며 효과적으로 소통합니다.</p>
+                    </div>
+                    <!-- Strength 3 -->
+                    <div class="bg-gray-900 p-6 rounded-lg border border-blue-900">
+                        <h3 class="text-xl font-bold mb-2 text-white">AI 기반 콘텐츠 제작</h3>
+                        <p class="text-gray-400">AI를 활용해 영상, 프레젠테이션, 웹 프로토타입 등 다양한 결과물을 기획하고 제작하는 데 능숙합니다.</p>
+                    </div>
+                    <!-- Strength 4 -->
+                    <div class="bg-gray-900 p-6 rounded-lg border border-blue-900">
+                        <h3 class="text-xl font-bold mb-2 text-white">문제 해결 및 최적화</h3>
+                        <p class="text-gray-400">복잡한 문제의 본질에 집중하고, AI를 활용하여 작업 과정을 최적화하는 문제 해결 능력을 갖추었습니다.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- NEW: Education Philosophy Section -->
+            <section id="education-philosophy" class="py-16 md:py-24">
+                <h2 class="text-3xl font-bold tracking-tight section-title">교육 철학 및 경험</h2>
+                <div class="prose prose-invert lg:prose-xl max-w-none text-gray-300 space-y-6">
+                    <p>
+                        여러번의 과외와 학원 강의 및 튜터링 활동은 저에게 학생들과 소통하고, 그들에게 어떻게 접근해야 하는지 노하우를 주는 기회였습니다. 처음 학생들을 대하고 제가 가진 지식을 전달할 때는 단순히 일방향적인 지식의 전달만을 목표했습니다. 하지만 그러한 방식은 학생들의 흥미를 쉽게 떨어뜨리고, 학습 효과가 저하되는 악순환을 반복했습니다.
+                    </p>
+                    <p>
+                        이러한 부분을 개선하고 싶어 강의나 튜터링 스타일을 바꾸는 시도를 여러 번 진행했고, 결국 깨달았던 것은 지식 저변의 <b>인간적인 소통</b>이었습니다. 단순히 지식을 전달하려는 것이 아니라, <b>학생과 학생의 생각을 이해하고 그에 맞추어 공감하고 도와주려는 자세</b>로 접근할 때, 학생은 물론 저도 학습 내용에 더 깊이 몰입할 수 있다는 것을 알게 되었습니다.
+                    </p>
+                     <p>
+                        이러한 경험들을 통해 얻은 비명시적인 노하우들이, LG디스커버리랩 크루로서 활동하는 데 큰 도움이 될 것이라고 확신합니다.
+                    </p>
+                </div>
+            </section>
+
+            <!-- 5. List of Careers Section -->
+            <section id="career" class="py-16 md:py-24">
+                <h2 class="text-3xl font-bold tracking-tight section-title">관련 직무경험</h2>
+                <div class="space-y-8">
+                    <!-- NEW Career Item -->
+                    <div class="relative pl-8">
+                        <h3 class="text-xl font-bold text-white">학회장 <span class="text-gray-400 font-normal">| 중앙대학교 데이터분석학회</span></h3>
+                        <p class="text-sm text-gray-500 mb-2">2025~</p>
+                        <p class="text-gray-400 career-item">중앙대학교 데이터분석 학회장으로써 학회 운영 및 방향성 총괄</p>
+                    </div>
+                    <!-- Career Item 1 -->
+                    <div class="relative pl-8">
+                        <h3 class="text-xl font-bold text-white">중고등학생 학습 튜터링 <span class="text-gray-400 font-normal">| 에듀플렉스</span></h3>
+                        <p class="text-sm text-gray-500 mb-2">2025~</p>
+                        <p class="text-gray-400 career-item">중고등학생 대상으로 개념 설명 및 문제 풀이 등 학습 보조 역할 수행</p>
+                    </div>
+                    <!-- Career Item 2 -->
+                    <div class="relative pl-8">
+                        <h3 class="text-xl font-bold text-white">자산운용사 리서치어시스턴트 인턴십 <span class="text-gray-400 font-normal">| 베네투스 자산운용</span></h3>
+                        <p class="text-sm text-gray-500 mb-2">2025</p>
+                        <p class="text-gray-400 career-item">투자기업 시장 및 자료조사를 진행. 기업 IR 미팅에 참여</p>
+                    </div>
+                    <!-- Career Item 3 -->
+                    <div class="relative pl-8">
+                        <h3 class="text-xl font-bold text-white">초중등학생 영어 강의 <span class="text-gray-400 font-normal">| 조이러닝센터</span></h3>
+                        <p class="text-sm text-gray-500 mb-2">2024</p>
+                        <p class="text-gray-400 career-item">초중등 학생대상으로 영어 스피킹 및 독해 수업 진행</p>
+                    </div>
+                     <!-- Career Item 4 -->
+                    <div class="relative pl-8">
+                        <h3 class="text-xl font-bold text-white">프로그래밍 개인 과외</h3>
+                        <p class="text-sm text-gray-500 mb-2">2024</p>
+                        <p class="text-gray-400 career-item">Python의 문법과 기초적인 코드 프로젝트 실습까지 개인 과외를 진행</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 6. Portfolio Section -->
+            <section id="portfolio" class="py-16 md:py-24">
+                <h2 class="text-3xl font-bold tracking-tight section-title">작업 및 공부 자료 일부</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Image Item -->
+                    <div class="md:col-span-2 bg-gray-900 p-6 rounded-lg border border-blue-900">
+                        <img src="sources/workflow_fin.png" alt="AI Workflow for a video project" class="rounded-md mb-4">
+                        <p class="text-center text-gray-400">영상 프로젝트에서 진행한 AI 사용 제작 파이프라인</p>
+                    </div>
+                    <!-- Link Items -->
+                    <a href="https://soapy-license-74f.notion.site/update20250807-249ad2e35894808aa9b5f09e67847c90?source=copy_link" target="_blank" class="link-card block bg-gray-900 p-6 rounded-lg border border-blue-900 hover:bg-gray-800 transition-colors">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-lg font-bold text-white">AI 툴 정리 및 학습 자료 예시 1</h3>
+                            <span class="link-card-arrow text-blue-400">→</span>
+                        </div>
+                    </a>
+                    <a href="https://soapy-license-74f.notion.site/update20250730-239ad2e358948069910edcabea6b95f3?source=copy_link" target="_blank" class="link-card block bg-gray-900 p-6 rounded-lg border border-blue-900 hover:bg-gray-800 transition-colors">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-lg font-bold text-white">AI 툴 정리 및 학습 자료 예시 2</h3>
+                            <span class="link-card-arrow text-blue-400">→</span>
+                        </div>
+                    </a>
+                    <a href="https://soapy-license-74f.notion.site/AI-1f5ad2e3589480c384d1c565a2862c3b?source=copy_link" target="_blank" class="link-card block bg-gray-900 p-6 rounded-lg border border-blue-900 hover:bg-gray-800 transition-colors">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-lg font-bold text-white">아티클 학습 예시 1</h3>
+                            <span class="link-card-arrow text-blue-400">→</span>
+                        </div>
+                    </a>
+                    <a href="https://soapy-license-74f.notion.site/AI-23-11-05-4aadfdd3a2d74a4f926ade5bb4dc053d?source=copy_link" target="_blank" class="link-card block bg-gray-900 p-6 rounded-lg border border-blue-900 hover:bg-gray-800 transition-colors">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-lg font-bold text-white">아티클 학습 예시 2</h3>
+                            <span class="link-card-arrow text-blue-400">→</span>
+                        </div>
+                    </a>
+                    <a href="https://soapy-license-74f.notion.site/AI-224ad2e35894802ebaa8da94504d336f?source=copy_link" target="_blank" class="link-card block bg-gray-900 p-6 rounded-lg border border-blue-900 hover:bg-gray-800 transition-colors">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-lg font-bold text-white">아티클 학습 예시 3</h3>
+                            <span class="link-card-arrow text-blue-400">→</span>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="py-16 md:py-24 text-center">
+                 <h2 class="text-3xl font-bold tracking-tight mb-4">Let's Connect</h2>
+                <p class="max-w-2xl mx-auto text-lg text-gray-400 mb-8">
+                    I'm always open to discussing new projects, creative ideas, or opportunities to be part of an ambitious vision. If you'd like to chat, please feel free to reach out.
+                </p>
+                <a href="mailto:lg1029lg@cau.ac.kr" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg text-lg transition-colors">
+                    lg1029lg@cau.ac.kr
+                </a>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="text-center py-8 border-t border-blue-900">
+            <p class="text-gray-500">&copy; 2025 김권택. All Rights Reserved.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
